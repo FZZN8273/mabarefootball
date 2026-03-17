@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGB Community - ZBC CLAN | Komunitas eFootball Mobile Indonesia Terpercaya</title>
+    
+    <!-- SEO Meta Tags for SGE Optimization -->
+    <meta name="description" content="Gabung komunitas eFootball Mobile Indonesia terbesar! PGB Community & ZBC CLAN. Turnamen eFootball gratis bulanan, cari teman mabar setia, sponsor eFootball mobile, dan partner komunitas game aktif.">
+    <meta name="keywords" content="komunitas eFootball mobile Indonesia, turnamen eFootball gratis bulanan, join grup WhatsApp eFootball, sponsor eFootball mobile, partner komunitas game, ZBC clan Zone Borneo, PGB Persatuan Gaming Borneo, main bareng eFootball, cara join clan eFootball, website eFootball Indonesia, cari teman mabar eFootball, teman setia mabar, turnamen PES mobile, clan eFootball kuat">
+    <meta name="author" content="PGB Community">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://official-pgb.vercel.app">
+    <meta property="og:title" content="PGB Community - ZBC CLAN | Komunitas eFootball Mobile Indonesia">
+    <meta property="og:description" content="Temukan teman mabar eFootball setia! Turnamen gratis tiap bulan, hadiah menarik, dibawah naungan ZBC CLAN. Join sekarang!">
+    <meta property="og:image" content="https://image.qwenlm.ai/public_source/415c3080-32d2-4d94-a166-8fd6701aeb03/1e0fabbcd-891b-4b0c-9d8b-e139e2180d09.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://official-pgb.vercel.app">
+    <meta property="twitter:title" content="PGB Community - ZBC CLAN | Komunitas eFootball Mobile Indonesia">
+    <meta property="twitter:description" content="Temukan teman mabar eFootball setia! Turnamen gratis tiap bulan, hadiah menarik, dibawah naungan ZBC CLAN. Join sekarang!">
+    <meta property="twitter:image" content="https://image.qwenlm.ai/public_source/415c3080-32d2-4d94-a166-8fd6701aeb03/1e0fabbcd-891b-4b0c-9d8b-e139e2180d09.png">
+
+    <!-- Structured Data for SGE (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsTeam",
+      "name": "PGB Community - ZBC CLAN",
+      "alternateName": "Persatuan Gaming Borneo",
+      "url": "https://official-pgb.vercel.app",
+      "description": "Komunitas eFootball Mobile Indonesia yang aktif mengadakan turnamen gratis bulanan dan mencari anggota baru untuk ZBC CLAN.",
+      "memberOf": {
+        "@type": "SportsTeam",
+        "name": "ZBC CLAN (ZONE BORNEO CLAN)"
+      },
+      "sameAs": [
+        "https://www.instagram.com/officialpgbefootball/",
+        "https://chat.whatsapp.com/JQlXyycKvbz6u9MG1tfsje"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* Dark Theme (Default) */
+            --bg-dark: #0a0a0a;
+            --bg-card: #141414;
+            --bg-nav: rgba(10, 10, 10, 0.95);
+            --primary-gold: #FFD700;
+            --text-white: #FFFFFF;
+            --text-main: #E0E0E0;
+            --text-gray: #B0B0B0;
+            --accent-red: #FF3333;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --hero-overlay: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.95) 100%);
+        }
+
+        [data-theme="light"] {
+            /* Light Theme Variables */
+            --bg-dark: #F5F5F7;
+            --bg-card: #FFFFFF;
+            --bg-nav: rgba(255, 255, 255, 0.95);
+            --primary-gold: #D4B200;
+            --text-white: #1A1A1A;
+            --text-main: #333333;
+            --text-gray: #555555;
+            --accent-red: #D32F2F;
+            --border-color: rgba(0, 0, 0, 0.1);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --hero-overlay: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(245,245,247,0.7) 50%, rgba(245,245,247,0.95) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- UTILITIES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-gold {
+            color: var(--primary-gold);
+        }
+
+        .text-red {
+            color: var(--accent-red);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: 2px solid transparent;
+            font-size: 0.9rem;
+        }
+
+        .btn-gold {
+            background-color: var(--primary-gold);
+            color: #000;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .btn-gold:hover {
+            background-color: transparent;
+            color: var(--primary-gold);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-white);
+            border: 2px solid var(--text-white);
+        }
+
+        [data-theme="light"] .btn-outline {
+            color: #000;
+            border-color: #000;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--text-white);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .section-title {
+            color: #000;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-gold);
+            box-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .section-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* --- HEADER / NAVIGATION --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--bg-nav);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.8rem;
+            color: var(--text-white);
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            z-index: 1001;
+        }
+
+        [data-theme="light"] .logo {
+            color: #000;
+        }
+
+        .logo span {
+            font-size: 0.7rem;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-gold);
+            letter-spacing: 1px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 1001;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        [data-theme="light"] .theme-toggle {
+            color: #000;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--primary-gold);
+            color: var(--primary-gold);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--text-white);
+            position: relative;
+            padding: 8px 0;
+        }
+
+        [data-theme="light"] .nav-link {
+            color: #000;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-gold);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--text-white);
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        [data-theme="light"] .mobile-toggle {
+            color: #000;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* Full Background Image - Messi & Yamal Focus */
+            background-image: url('https://image.qwenlm.ai/public_source/415c3080-32d2-4d94-a166-8fd6701aeb03/1e0fabbcd-891b-4b0c-9d8b-e139e2180d09.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--hero-overlay);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 100px 20px 60px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 0 0 30px rgba(0,0,0,0.8);
+        }
+
+        .hero-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            color: var(--primary-gold);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: #eee;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .hero-warning {
+            font-size: 0.9rem;
+            color: #ff6b6b;
+            margin-top: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: pulse 2s infinite;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .hero-warning a {
+            text-decoration: underline;
+            color: #ff6b6b;
+        }
+
+        /* --- WHY JOIN SECTION --- */
+        .why-join {
+            background-color: var(--bg-dark);
+            position: relative;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: var(--primary-gold);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px var(--shadow-color);
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .feature-title {
+            color: #000;
+        }
+
+        .feature-text {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* --- DIFFERENCE SECTION --- */
+        .difference {
+            background-color: var(--bg-card);
+            background-image: radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 20%);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .diff-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+        }
+
+        [data-theme="light"] .diff-card {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .diff-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: var(--primary-gold);
+        }
+
+        .diff-icon {
+            font-size: 2rem;
+            color: var(--accent-red);
+            margin-bottom: 15px;
+        }
+
+        .diff-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .diff-title {
+            color: #000;
+        }
+
+        .diff-text {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* --- RULES SECTION --- */
+        .rules-section {
+            background-color: var(--bg-dark);
+            border-top: 1px solid rgba(255, 51, 51, 0.2);
+            border-bottom: 1px solid rgba(255, 51, 51, 0.2);
+            position: relative;
+        }
+
+        .rules-box {
+            background: linear-gradient(145deg, rgba(26,5,5,0.8), rgba(10,10,10,0.8));
+            border: 2px solid var(--accent-red);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 51, 51, 0.15);
+            max-width: 900px;
+            margin: 0 auto;
+            backdrop-filter: blur(5px);
+        }
+
+        [data-theme="light"] .rules-box {
+            background: linear-gradient(145deg, rgba(255,240,240,0.9), rgba(255,255,255,0.9));
+        }
+
+        .rules-list {
+            margin-top: 30px;
+        }
+
+        .rules-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .rules-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .rules-number {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: var(--accent-red);
+            margin-right: 20px;
+            line-height: 1;
+            min-width: 30px;
+        }
+
+        .rules-content h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--text-white);
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        [data-theme="light"] .rules-content h4 {
+            color: #000;
+        }
+
+        .rules-content p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .rules-agreement {
+            margin-top: 30px;
+            text-align: center;
+            font-style: italic;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* --- SPONSOR SECTION --- */
+        .sponsor-section {
+            background-color: var(--bg-card);
+        }
+
+        .sponsor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .sponsor-card {
+            background-color: var(--bg-dark);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sponsor-card.premium {
+            border: 2px solid var(--primary-gold);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+            transform: scale(1.02);
+        }
+
+        .sponsor-header {
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .sponsor-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .sponsor-title {
+            color: #000;
+        }
+
+        .sponsor-price {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+        }
+
+        .sponsor-body {
+            padding: 30px;
+            flex-grow: 1;
+        }
+
+        .sponsor-features {
+            margin-bottom: 30px;
+        }
+
+        .sponsor-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .sponsor-feature i {
+            color: var(--primary-gold);
+            margin-right: 15px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .sponsor-note {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        [data-theme="light"] .sponsor-note {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .sponsor-footer {
+            padding: 0 30px 30px;
+        }
+
+        .btn-sponsor {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-section {
+            background-color: var(--bg-dark);
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            min-width: 150px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            transition: 0.3s;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        [data-theme="light"] .contact-icon {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-item:hover .contact-icon {
+            background-color: var(--primary-gold);
+            color: var(--bg-dark);
+            transform: rotate(360deg);
+        }
+
+        .contact-label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .contact-label {
+            color: #000;
+        }
+
+        /* --- BIG CTA --- */
+        .big-cta {
+            background: linear-gradient(45deg, var(--bg-dark), var(--bg-card));
+            padding: 100px 0;
+            text-align: center;
+            border-top: 1px solid var(--primary-gold);
+            border-bottom: 1px solid var(--primary-gold);
+        }
+
+        .big-cta h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .big-cta h2 {
+            color: #000;
+        }
+
+        .big-cta p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+        }
+
+        .btn-huge {
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-huge:hover {
+            background-color: #1ebc57;
+            color: white;
+            box-shadow: 0 0 50px rgba(37, 211, 102, 0.6);
+            transform: scale(1.05);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #050505;
+            padding: 50px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        [data-theme="light"] footer {
+            background-color: #e0e0e0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            color: var(--text-white);
+        }
+
+        [data-theme="light"] .footer-logo {
+            color: #000;
+        }
+
+        .footer-tagline {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-link {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-gold);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 992px) {
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: var(--bg-nav);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s ease;
+                border-left: 1px solid var(--border-color);
+                padding: 80px 20px 20px;
+                gap: 20px;
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-right .btn {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .big-cta h2 {
+                font-size: 2.5rem;
+            }
+
+            .sponsor-card.premium {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 80px 15px 40px;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .section-padding {
+                padding: 60px 0;
+            }
+
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .rules-box {
+                padding: 25px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact-grid {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .big-cta h2 {
+                font-size: 1.8rem;
+            }
+
+            .btn-huge {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Mobile Menu Overlay */
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                ZBC
+                <span>ZONE BORNEO CLAN</span>
+            </a>
+            
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="https://chat.whatsapp.com/JQlXyycKvbz6u9MG1tfsje" target="_blank" class="btn btn-gold desktop-only">
+                    <i class="fab fa-whatsapp"></i> Join WA
+                </a>
+                <div class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#why-join" class="nav-link">Keuntungan</a></li>
+                <li><a href="#sponsor" class="nav-link">Sponsor</a></li>
+                <li><a href="#rules" class="nav-link">Rules</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+                <li><a href="https://chat.whatsapp.com/JQlXyycKvbz6u9MG1tfsje" target="_blank" class="btn btn-gold mobile-only">Join WhatsApp</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Temukan Teman Mabar <span class="text-gold">eFootball</span> Anda Sekarang!</h1>
+            <h2 class="hero-subtitle">Dijamin Dapat Teman Mabar Setia 🙌😋</h2>
+            <p class="hero-desc">Turnamen GRATIS tiap bulan • Hadiah menarik • Dibawah naungan ZBC CLAN (ZONE BORNEO CLAN)</p>
+            
+            <div class="hero-cta-group">
+                <a href="https://chat.whatsapp.com/JQlXyycKvbz6u9MG1tfsje" target="_blank" class="btn btn-gold" style="font-size: 1.2rem; padding: 15px 40px;">
+                    <i class="fab fa-whatsapp"></i> CARI TEMAN MABAR SEKARANG
+                </a>
+                <div class="hero-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Wajib cek rules sebelum join! <a href="#rules">Klik di sini</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section id="why-join" class="section-padding why-join">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Kenapa Harus <span class="text-gold">Gabung?</span></h2>
+                <p class="section-subtitle">Bukan sekadar grup, ini adalah keluarga gamers Borneo</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="feature-card">
+                    <i class="fas fa-trophy feature-icon"></i>
+                    <h3 class="feature-title">Turnamen Gratis Tiap Bulan</h3>
+                    <p class="feature-text">Setiap bulan kami adakan turnamen eFootball Mobile dengan hadiah menarik. Semua member bisa ikut tanpa dipungut biaya.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3 class="feature-title">Dibawah Naungan ZBC CLAN</h3>
+                    <p class="feature-text">Kami bukan komunitas abal-abal. ZBC CLAN (ZONE BORNEO CLAN) sudah malang melintang di scene eFootball. Cek <a href="https://official-pgb.vercel.app" target="_blank" class="text-gold">official-pgb.vercel.app</a>.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gamepad feature-icon"></i>
+                    <h3 class="feature-title">Komunitas Aktif & Solid</h3>
+                    <p class="feature-text">Bukan cuma main bareng, kita juga diskusi taktik, sharing skill, dan saling support biar makin jago.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments feature-icon"></i>
+                    <h3 class="feature-title">Grup WhatsApp Super Aktif</h3>
+                    <p class="feature-text">Grup WA kita rame tiap hari. Cari sparing, ngobrol bola, atau sekedar ngakak bareng teman baru.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-fire feature-icon"></i>
+                    <h3 class="feature-title">Open Member ZBC CLAN</h3>
+                    <p class="feature-text">Yang mau serius dan punya skill, ada jalur khusus untuk join ZBC CLAN. Cek syaratnya di website kami!</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-hand-holding-heart feature-icon"></i>
+                    <h3 class="feature-title">Kekeluargaan & Supportif</h3>
+                    <p class="feature-text">Dari casual sampai tryhard, semua diterima. Yang penting mau main, respect, dan ngobrol!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Difference Section -->
+    <section class="section-padding difference">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Beda Dari <span class="text-red">Komunitas Lain</span></h2>
+                <p class="section-subtitle">Apa yang membuat PGB Community spesial?</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="diff-card">
+                    <i class="fas fa-sync-alt diff-icon"></i>
+                    <h4 class="diff-title">Rutinitas</h4>
+                    <p class="diff-text">Turnamen tiap bulan, bukan cuma sekali-sekali lalu hilang.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="fas fa-link diff-icon"></i>
+                    <h4 class="diff-title">Koneksi Clan</h4>
+                    <p class="diff-text">Terhubung langsung dengan ZBC CLAN yang punya reputasi kuat.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="fas fa-chart-line diff-icon"></i>
+                    <h4 class="diff-title">Pengembangan Skill</h4>
+                    <p class="diff-text">Diskusi taktik, review gameplay, saling ngajarin biar naik rank.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="fas fa-globe diff-icon"></i>
+                    <h4 class="diff-title">Jaringan Luas</h4>
+                    <p class="diff-text">Koneksi dengan pemain eFootball dari berbagai daerah di Indonesia.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="fas fa-gift diff-icon"></i>
+                    <h4 class="diff-title">Hadiah Menarik</h4>
+                    <p class="diff-text">Meskipun kecil, hadiah selalu ada buat pemenang turnamen bulanan.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="fas fa-clock diff-icon"></i>
+                    <h4 class="diff-title">Grup Aktif 24/7</h4>
+                    <p class="diff-text">Obrolan nggak pernah mati, cocok buat yang nyari temen mabar anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section-padding rules-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" style="color: var(--accent-red);">📋 Rules Komunitas</h2>
+                <p class="section-subtitle">Wajib Baca Sebelum Join! No debat.</p>
+            </div>
+
+            <div class="rules-box">
+                <div class="rules-list">
+                    <div class="rules-item">
+                        <div class="rules-number">01</div>
+                        <div class="rules-content">
+                            <h4>Saling Menghormati</h4>
+                            <p>No toxic, no rasis, no SARA. Jaga sopan santun di grup dan saat mabar.</p>
+                        </div>
+                    </div>
+                    <div class="rules-item">
+                        <div class="rules-number">02</div>
+                        <div class="rules-content">
+                            <h4>Aktif Minimal Seminggu Sekali</h4>
+                            <p>Biar komunitas rame dan nggak sepi. Minimal sapa atau main sesekali.</p>
+                        </div>
+                    </div>
+                    <div class="rules-item">
+                        <div class="rules-number">03</div>
+                        <div class="rules-content">
+                            <h4>Dilarang Spam Link/Promosi</h4>
+                            <p>Promosi tanpa izin admin akan langsung di-kick. Tanya dulu boleh gak.</p>
+                        </div>
+                    </div>
+                    <div class="rules-item">
+                        <div class="rules-number">04</div>
+                        <div class="rules-content">
+                            <h4>Siap Main Bareng & Support</h4>
+                            <p>Kita disini cari teman, bukan musuh. Support teman yang kalah, belajar bareng.</p>
+                        </div>
+                    </div>
+                    <div class="rules-item">
+                        <div class="rules-number">05</div>
+                        <div class="rules-content">
+                            <h4>Bebas Share (Kecuali Promosi)</h4>
+                            <p>Bebas share meme, video, atau apapun asalkan berbaur dengan tema eFootball Mobile dan tidak melanggar aturan no 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="rules-agreement">"Dengan join grup, kamu setuju dengan rules di atas."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsor Section -->
+    <section id="sponsor" class="section-padding sponsor-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Jadi Sponsor Atau <span class="text-gold">Mitra Kami</span></h2>
+                <p class="section-subtitle">Gas kolaborasi! Dukung komunitas, dapat exposure.</p>
+            </div>
+
+            <div class="sponsor-grid">
+                <!-- Sponsor Card -->
+                <div class="sponsor-card premium">
+                    <div class="sponsor-header">
+                        <h3 class="sponsor-title text-gold">SPONSOR</h3>
+                        <div class="sponsor-price">Rp 10.000</div>
+                    </div>
+                    <div class="sponsor-body">
+                        <ul class="sponsor-features">
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> Brand ditampilkan di Instagram @officialpgbefootball</li>
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> Logo & promosi di Grup WA & Diskusi</li>
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> <strong>GRATIS Website + Domain Vercel/Netlify</strong></li>
+                            <li class="sponsor-feature"><i class="fas fa-info-circle"></i> Domain .com/.id/.org biaya ditanggung klien</li>
+                        </ul>
+                        <div class="sponsor-note">
+                            Investasi kecil untuk exposure besar di komunitas gaming yang aktif. Kami bantu buatkan website profesional untuk brand Anda.
+                        </div>
+                    </div>
+                    <div class="sponsor-footer">
+                        <a href="https://wa.me/6287817343826?text=Halo%20Admin%20PGB,%20saya%20tertarik%20jadi%20Sponsor" target="_blank" class="btn btn-gold btn-sponsor">Ajukan Sponsor</a>
+                    </div>
+                </div>
+
+                <!-- Partner Card -->
+                <div class="sponsor-card">
+                    <div class="sponsor-header">
+                        <h3 class="sponsor-title">PARTNER</h3>
+                        <div class="sponsor-price">Free / Rp 10.000</div>
+                    </div>
+                    <div class="sponsor-body">
+                        <ul class="sponsor-features">
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> Nama/Logo masuk di Website PGB</li>
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> Gratis Website (Syarat & Ketentuan)</li>
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> Free Domain Vercel/Netlify</li>
+                            <li class="sponsor-feature"><i class="fas fa-check-circle"></i> Promosi di komunitas selama kerjasama</li>
+                        </ul>
+                        <div class="sponsor-note">
+                            Bisa gratis sesuai kesepakatan atau bayar 10K untuk paket lengkap. Cocok untuk konten kreator atau toko kecil yang mau naik kelas.
+                        </div>
+                    </div>
+                    <div class="sponsor-footer">
+                        <a href="https://wa.me/6287817343826?text=Halo%20Admin%20PGB,%20saya%20tertarik%20jadi%20Partner" target="_blank" class="btn btn-outline btn-sponsor">Jadi Partner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <h2 class="section-title">Hubungi <span class="text-gold">Kami</span></h2>
+            <p class="section-subtitle">Ada pertanyaan? Langsung chat aja!</p>
+
+            <div class="contact-grid">
+                <a href="https://wa.me/6287817343826" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <span class="contact-label">WhatsApp</span>
+                </a>
+                <a href="https://t.me/FaUzAn_0605" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-telegram-plane"></i></div>
+                    <span class="contact-label">Telegram</span>
+                </a>
+                <a href="https://www.instagram.com/officialpgbefootball/?igsh=ZGUzMzM3NWJiOQ%3D%3D#" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                    <span class="contact-label">Instagram</span>
+                </a>
+                <a href="https://official-pgb.vercel.app" target="_blank" class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                    <span class="contact-label">Website ZBC</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big CTA -->
+    <section class="big-cta">
+        <div class="container">
+            <h2>SUDAH SIAP DAPAT TEMAN MABAR SETIA?</h2>
+            <p>Gratis, santai, tapi serius mainnya. Wajib baca rules ya! 😋</p>
+            <a href="https://chat.whatsapp.com/JQlXyycKvbz6u9MG1tfsje" target="_blank" class="btn btn-huge">
+                <i class="fab fa-whatsapp"></i> GAS JOIN WHATSAPP NOW!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ZBC CLAN</div>
+                <p class="footer-tagline">
+                    ZBC CLAN (ZONE BORNEO CLAN) • Commitment is non-negotiable.<br>
+                    PGB (Persatuan Gaming Borneo) – Komunitas Mabar eFootball Mobile
+                </p>
+                <div class="footer-links">
+                    <a href="#rules" class="footer-link">Rules</a>
+                    <a href="#sponsor" class="footer-link">Sponsor</a>
+                    <a href="#contact" class="footer-link">Kontak</a>
+                    <a href="https://official-pgb.vercel.app" target="_blank" class="footer-link">Official Website</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 PGB Community / ZBC CLAN. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        const themeIcon = themeToggle.querySelector('i');
+
+        // Check Local Storage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateIcon(savedTheme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'light') {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+        }
+
+        // Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileBtn = document.querySelector('.mobile-only');
+
+        function toggleMenu() {
+            navMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        mobileToggle.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+
+        // Close mobile menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        }
+
+        // Sticky Header Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 2px 10px var(--shadow-color)';
+                header.style.padding = '10px 0';
+            } else {
+                header.style.boxShadow = 'none';
+                header.style.padding = '12px 0';
+            }
+        });
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992 && navMenu.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    </script>
+</body>
+</html>
+
